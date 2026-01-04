@@ -46,7 +46,7 @@ header {
   border-bottom: 1px solid var(--black);
 }
 
-nav ul {
+nav {
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -59,13 +59,9 @@ nav a {
   color: var(--black);
   font-family: "Aboreto", cursive;
 }
-
-/* logo */
-.logo a {
-  font-family: "Luxurious Script", cursive;
-  font-size: 1.8rem;
+.logo {
+  width: 150px;
 }
-
 /* footer */
 footer {
   border-top: 1px solid var(--black);
