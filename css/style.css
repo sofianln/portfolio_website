@@ -61,33 +61,19 @@
 }
 
 /* om mig */
-
-.about-section {
-  padding: 2rem 1rem;
+.tekst_om_mig {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
-.about-image {
-  width: 60%;
-  max-width: 250px;
-  margin: 1.5rem auto;
-  display: block;
-  border-radius: 50%;
-}
-
-.reflection {
-  padding: 2rem 1rem;
-  background-color: #ffffff;
-  margin-top: 2rem;
-}
 .om_mig_billede {
-  width: 100%;
+  width: 500px;
   height: auto;
   display: block;
-  margin-bottom: 1rem;
-}
-.reflection p {
-  margin-bottom: 1rem;
+  margin: auto;
+  margin-top: 20px;
 }
 
 @media (min-width: 768px) {
