@@ -1,0 +1,75 @@
+/* generel styling til hele websitet */
+:root {
+  --red: #ee0505;
+  --beige: #f4f0e2;
+  --black: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* fonts */
+body {
+  font-family: "Abel", sans-serif;
+  background-color: var(--beige);
+  color: var(--black);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lacquer", cursive;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  max-width: 65ch;
+  margin-bottom: 1rem;
+}
+
+/* menuen */
+header {
+  border-bottom: 1px solid var(--black);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--black);
+  font-family: "Aboreto", cursive;
+}
+
+/* logo */
+.logo a {
+  font-family: "Luxurious Script", cursive;
+  font-size: 1.8rem;
+}
+
+/* footer */
+footer {
+  border-top: 1px solid var(--black);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
