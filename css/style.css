@@ -69,25 +69,25 @@
 }
 
 .om_mig_billede {
-  width: 500px;
-  height: auto;
+  max-width: 100%;
+  height: 45vh;
+  object-fit: cover;
   display: block;
-  margin: auto;
-  margin-top: 20px;
+  margin: 20px auto 0;
 }
 
-@media (min-width: 768px) {
-  .about-section,
-  .reflection {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-  }
+.grid_billeder_om_mig {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
 
-  .about-image {
-    float: right;
-    margin: 0 0 1rem 2rem;
-  }
+.grid_billeder_om_mig img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  border-radius: 1px;
 }
 
 /* opgaver */
@@ -117,12 +117,4 @@ main h1 {
 .project-links a:hover {
   color: var(--red);
   border-color: var(--red);
-}
-
-@media (min-width: 768px) {
-  .theme-section {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
 }
