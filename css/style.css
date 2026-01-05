@@ -10,7 +10,7 @@
   display: block;
 }
 
-.hero-text {
+.hero-tekst {
   position: absolute;
   inset: 0;
   display: flex;
@@ -18,7 +18,7 @@
   align-items: center;
 }
 
-.hero-text h1 {
+.hero-tekst h1 {
   color: var(--red);
   font-size: 2.5rem;
   text-align: center;
@@ -33,7 +33,7 @@
   padding: 2rem 1rem;
 }
 
-.btn {
+.button {
   display: inline-block;
   padding: 0.6rem 1.5rem;
   margin-top: 1rem;
@@ -43,23 +43,31 @@
   color: var(--black);
 }
 
-.extra-content {
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-.image-grid {
+.billede_grid_forside {
   display: flex;
   gap: 1rem;
   justify-content: center;
   margin: 1.5rem 0;
 }
 
-.image-grid img {
+.billede_grid_forside img {
   width: 45%;
   object-fit: cover;
 }
 
+@media screen and (min-width: 800px) {
+  .hero-tekst h1 {
+    font-size: 4rem;
+  }
+
+  .billede_grid_forside img {
+    width: 30%;
+  }
+  .sofiatekst {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
 /* om mig */
 .tekst_om_mig {
   display: flex;
@@ -89,32 +97,25 @@
   display: block;
   border-radius: 1px;
 }
+@media screen and (min-width: 800px) {
+  .grid_billeder_om_mig {
+    grid-template-columns: 1fr 1fr;
+  }
+  .tekst_om_mig {
+    text-align: center;
+  }
+  .om_mig_billede {
+    width: 700px;
+    height: auto;
+  }
+}
 
 /* opgaver */
 
-main h1 {
-  text-align: center;
-  margin: 2rem 0;
+/* .tema2_tekst {
+  display: none;
 }
 
-.theme-section {
-  padding: 1.5rem 1rem;
-  border-bottom: 1px solid var(--black);
-}
-
-.theme-section:last-child {
-  border-bottom: none;
-}
-
-.project-links a {
-  display: inline-block;
-  margin-top: 0.5rem;
-  text-decoration: none;
-  color: var(--black);
-  border-bottom: 1px solid var(--black);
-}
-
-.project-links a:hover {
-  color: var(--red);
-  border-color: var(--red);
-}
+.akkordionknap + .tema2_tekst {
+  display: block;
+} */
