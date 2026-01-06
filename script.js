@@ -2,10 +2,12 @@ const toggles = document.querySelectorAll(".knapopgaver");
 
 toggles.forEach(function (toggle) {
   toggle.addEventListener("click", function () {
-    const content = this.parentElement.querySelector(".indholdopgaver");
-    content.style.display =
-      content.style.display === "block" ? "none" : "block";
+    const section = this.closest("section");
+    const content = section.querySelector(".indholdopgaver");
 
-    this.textContent = content.style.display === "block" ? "▼" : "▶";
+    const isOpen = content.style.display === "block";
+
+    content.style.display = isOpen ? "none" : "block";
+    this.textContent = isOpen ? "▶" : "▼";
   });
 });
