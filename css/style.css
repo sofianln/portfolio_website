@@ -180,7 +180,11 @@
 
 .tema3gridbilleder {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "moodboard researchemne"
+    "moodboard userstories"
+    "moodboard hifiprototype";
   gap: 0.75rem;
 
   max-width: 100%;
@@ -189,8 +193,103 @@
 
 .tema3gridbilleder img {
   width: 100%;
-  max-height: 35vh;
+  height: 100%;
   object-fit: cover;
+}
+
+.moodboardemnesite {
+  grid-area: moodboard;
+  max-height: 60vh;
+}
+.researchemnesite {
+  grid-area: researchemne;
+  max-height: 20vh;
+}
+
+.userstoriesemnesite {
+  grid-area: userstories;
+  max-height: 20vh;
+}
+
+.hifiprototypeemnesite {
+  grid-area: hifiprototype;
+  max-height: 20vh;
+}
+
+.tema4gridbilleder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "formular logoideer"
+    "formular dokumentation"
+    "formular dokumentation2";
+  gap: 0.75rem;
+
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+.tema4gridbilleder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.formular {
+  grid-area: formular;
+  max-height: 60vh;
+}
+
+.logoideer {
+  grid-area: logoideer;
+  max-height: 20vh;
+}
+
+.dokumentation {
+  grid-area: dokumentation;
+  max-height: 20vh;
+}
+
+.dokumentation2 {
+  grid-area: dokumentation2;
+  max-height: 20vh;
+}
+.tema5gridbilleder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  grid-template-rows: 20vh 20vh 20vh;
+
+  grid-template-areas:
+    "minside burger"
+    "minside moodboard"
+    "minside research";
+
+  gap: 0.75rem;
+  padding: 0 1rem;
+}
+
+.tema5gridbilleder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.minsidemewe {
+  grid-area: minside;
+  object-fit: contain;
+}
+
+.burgermenumewe {
+  grid-area: burger;
+}
+
+.moordboardmewe {
+  grid-area: moodboard;
+}
+
+.researchmewe {
+  grid-area: research;
 }
 
 @media (min-width: 800px) {
